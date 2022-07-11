@@ -273,7 +273,7 @@ main {
     margin-top: 15px;
     height: calc(570px - 30px - 34px - 30px - 20px); } }
 
-@media (hover: none) {
+@media (hover: hover) {
   .list {
     -webkit-mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
             mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
