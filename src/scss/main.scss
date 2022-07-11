@@ -121,7 +121,6 @@ main {
 }
 
 .list {
-	// background: darkslateblue;
 	position: relative;
 	mask-image:
 		linear-gradient(
@@ -285,7 +284,7 @@ main {
 	}
 }
 
-@media (hover: none) {
+@media (hover: hover) {
 	.list {
 		mask-image:
 			linear-gradient(
@@ -304,3 +303,9 @@ main {
 		mask-size: calc(100% - 10px) 100%, 4px 100%;
 	}
 }
+
+// @media (hover: hover) and (pointer: fine) {
+// 	*:hover {
+// 		background: red;
+// 		color: red;
+// 	}
