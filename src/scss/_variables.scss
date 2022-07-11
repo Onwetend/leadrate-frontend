@@ -1,0 +1,12 @@
+$color-white: #fff;
+$color-gray: #4f5565;
+$color-orange: #ff8469;
+$color-orange-dark: #d95133;
+$color-background: #252e42;
+$color-copy: #414b62;
+
+$font-primary: -apple-system, blinkmacsystemfont, "Montserrat", "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+@mixin easing {
+	transition: 0.3s ease-in-out;
+}
