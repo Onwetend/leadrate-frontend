@@ -284,8 +284,10 @@ main {
 	}
 }
 
-@media (hover: hover) {
+@supports (-moz-appearance:none) {
+	@media screen and (max-width: 1023px){
 	.list {
+		background: blue;
 		mask-image:
 			linear-gradient(
 				to right,
@@ -301,11 +303,6 @@ main {
 		mask-position: 0 0, calc(100%) 0;
 		mask-repeat: no-repeat, no-repeat;
 		mask-size: calc(100% - 10px) 100%, 4px 100%;
+		}
 	}
 }
-
-// @media (hover: hover) and (pointer: fine) {
-// 	*:hover {
-// 		background: red;
-// 		color: red;
-// 	}

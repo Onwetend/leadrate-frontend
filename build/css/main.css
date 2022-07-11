@@ -273,15 +273,17 @@ main {
     margin-top: 15px;
     height: calc(570px - 30px - 34px - 30px - 20px); } }
 
-@media (hover: hover) {
-  .list {
-    -webkit-mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
-            mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
-    -webkit-mask-position: 0 0, calc(100%) 0;
-            mask-position: 0 0, calc(100%) 0;
-    -webkit-mask-repeat: no-repeat, no-repeat;
-            mask-repeat: no-repeat, no-repeat;
-    -webkit-mask-size: calc(100% - 10px) 100%, 4px 100%;
-            mask-size: calc(100% - 10px) 100%, 4px 100%; } }
+@supports (-moz-appearance: none) {
+  @media screen and (max-width: 1023px) {
+    .list {
+      background: blue;
+      -webkit-mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
+              mask-image: linear-gradient(to right, #000, #000 50px, #000 calc(90% - 20px), transparent), linear-gradient(transparent, transparent);
+      -webkit-mask-position: 0 0, calc(100%) 0;
+              mask-position: 0 0, calc(100%) 0;
+      -webkit-mask-repeat: no-repeat, no-repeat;
+              mask-repeat: no-repeat, no-repeat;
+      -webkit-mask-size: calc(100% - 10px) 100%, 4px 100%;
+              mask-size: calc(100% - 10px) 100%, 4px 100%; } } }
 
 /*# sourceMappingURL=main.css.map */
